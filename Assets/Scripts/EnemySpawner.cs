@@ -8,13 +8,12 @@ public class EnemySpawner : MonoBehaviour {
     public Transform enemyPrefab;
     public static int countOfEnemyOnScene;
     private Transform[] pointsOfRespown;
-    //-- Value of CountOfEnemy is change in NewGameScene--//
+    //-- Value of CountOfEnemy will change in NewGameScene--//
     public static int CountOfEnemy =10;
 
 
     private void Awake()
     {
-       
         CountOfEnemy = PlayerStats.NumbersOfPlayerToCreate;
     }
 

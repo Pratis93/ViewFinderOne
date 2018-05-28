@@ -6,7 +6,7 @@ public class EnemyBull : MonoBehaviour {
 
     [Header("bullet")]
     public Rigidbody rb;
-    private float lifeTimeOfBullet = 60;
+    public float lifeTimeOfBullet = 10;
     public float speedOfEnemyBull = 1;
 
 

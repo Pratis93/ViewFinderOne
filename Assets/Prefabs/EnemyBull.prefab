@@ -112,7 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  speedOfEnemyBull: 1
+  lifeTimeOfBullet: 7
+  speedOfEnemyBull: 1.15
 --- !u!135 &135067334340511186
 SphereCollider:
   m_ObjectHideFlags: 1

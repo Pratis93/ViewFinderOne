@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using  UnityEngine.UI;
+using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour {
 
@@ -15,13 +15,13 @@ public class PlayerStats : MonoBehaviour {
 
     [Header("player new game stats")]
     public static int hitPerRound;
-    public static int shotPerRound;
-
+    public static int shootPerRound;
 
     // Use this for initialization
     void Start ()
     {
         CalculateAndSetAccuracy();
+        SetClearHitAndShootStats();
     }
 
     // Update is called once per frame
@@ -33,10 +33,10 @@ public class PlayerStats : MonoBehaviour {
     /// <summary>
     /// Set Hit and Shot stats
     /// </summary>
-    void SetStats()
+    void SetClearHitAndShootStats()
     {
         hitPerRound = 0;
-        shotPerRound = 0;
+        shootPerRound = 0;
     }
 
     /// <summary>
@@ -77,7 +77,7 @@ public class PlayerStats : MonoBehaviour {
         shot += 1;
         PlayerPrefsManager.SetPlayerShot(shot);
 
-        shotPerRound += 1;
+        shootPerRound += 1;
     }
 
     /// <summary>

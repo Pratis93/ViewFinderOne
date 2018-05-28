@@ -16,7 +16,7 @@ public class PauseMenu : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F1))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             TooglePause();
         }
@@ -28,7 +28,7 @@ public class PauseMenu : MonoBehaviour {
     /// </summary>
     void CheckStats()
     {
-        float shot = PlayerStats.shotPerRound;
+        float shot = PlayerStats.shootPerRound;
         float hit = PlayerStats.hitPerRound;
 
         shotText.text = shot.ToString();

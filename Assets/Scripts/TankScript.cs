@@ -8,7 +8,10 @@ public class TankScript : MonoBehaviour {
 
     [Header("Enemy")]
     public GameObject tank;
+    public GameObject barOfEnemyToRotate;
     public int speedOfTank=1;
+    public int speedOfTurnFace;
+    
 
     public int live=2;
     private int liveForbar;
@@ -19,7 +22,7 @@ public class TankScript : MonoBehaviour {
     [Header("Use Bullets")]
     public GameObject bulletPreFab;
     private float random;
-    private float randomOfrandom = 0.5f;
+    public float randomOfrandom = 0.5f;
 
     public float fireRate = 0.2f;
     private float fireCountDown = 0f;
@@ -29,16 +32,28 @@ public class TankScript : MonoBehaviour {
     [Header("Use Bullets")]
     private GameObject  positionOfPlayer;
 
+    [Header("Music")]
+    private SoundManager sound;
+
+
     void Start()
     {
+        GetComponents();
         positionOfPlayer = GameObject.FindGameObjectWithTag("Player");
         liveForbar = live;
     }
 
     void Update()
     {
-        MoveToPlayer();
+        MoveToPlayerAndRotateBar();
         Bullet();
+    }
+    /// <summary>
+    /// Get selected component
+    /// </summary>
+    void GetComponents()
+    {
+        sound = FindObjectOfType<SoundManager>();
     }
 
     /// <summary>
@@ -61,6 +76,7 @@ public class TankScript : MonoBehaviour {
         {
             live--;
             PlayerStats.Hit();
+            sound.PlayHit();
 
             SetLiveBar();
 
@@ -73,14 +89,19 @@ public class TankScript : MonoBehaviour {
     }
 
     /// <summary>
-    /// Move tank to Player
+    /// Move enemy to Player and rotate "healthBar" to Player
     /// </summary>
-    void MoveToPlayer()
+    void MoveToPlayerAndRotateBar()
     {
         if (positionOfPlayer == null) return;
 
-       Vector3 dir = positionOfPlayer.transform.position - tank.transform.position;
-       tank.transform.Translate(dir.normalized * speedOfTank * Time.deltaTime, Space.World);
+        Vector3 dir = positionOfPlayer.transform.position - tank.transform.position;
+        tank.transform.Translate(dir.normalized * speedOfTank * Time.deltaTime, Space.World);
+
+        //--Rotate "face" of player --//
+        Quaternion lookRotation = Quaternion.LookRotation(dir);
+        Vector3 rotation = Quaternion.Lerp(barOfEnemyToRotate.transform.rotation, lookRotation, Time.deltaTime * speedOfTurnFace).eulerAngles;
+        barOfEnemyToRotate.transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
 
     /// <summary>

@@ -53,12 +53,17 @@ public class bullScript : MonoBehaviour {
     /// </summary>
     void BullGoesStraight()
     {
+
+        //if (targetOne == null)
+        //{
+        //    Destroy(gameObject);
+        //    return;
+        //}
+        
+
         targetOne = new Vector3(x, y, z);
 
-        if (targetOne == null) Destroy(gameObject);
-
         Vector3 dir = targetOne - transform.position;
-        float distanceThisFrame = speed * Time.deltaTime;
 
         if (Vector3.Distance(targetOne, transform.position) < 5F)
         {

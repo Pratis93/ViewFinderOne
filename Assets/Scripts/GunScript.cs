@@ -20,6 +20,14 @@ public class GunScript : MonoBehaviour {
     public float counterTimebull;
     public float frekvencyOfBull;
 
+    [Header("sounds")]
+    private SoundManager sound;
+
+    private void Awake()
+    {
+        GetComponents();
+    } 
+
 
     void Start()
     {
@@ -34,6 +42,15 @@ public class GunScript : MonoBehaviour {
         }
     }
 
+
+    /// <summary>
+    /// Get selected component from game
+    /// </summary>
+    void GetComponents()
+    {
+        sound = FindObjectOfType<SoundManager>();
+    }
+
     /// <summary>
     /// Shoot selected bullet. 
     /// </summary>
@@ -43,6 +60,7 @@ public class GunScript : MonoBehaviour {
         {
             Instantiate(bullet[0], firepoint.transform.position, Quaternion.identity);
             PlayerStats.Shoot();
+            sound.PlayShoot();
         }
         else
 
@@ -50,6 +68,7 @@ public class GunScript : MonoBehaviour {
         {
             Instantiate(bullet[1], firepoint.transform.position, Quaternion.identity);
             PlayerStats.Shoot();
+            sound.PlayShoot();
         }
         else
         if (weaponInHeand == WeaponEnum.none)

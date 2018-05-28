@@ -8,6 +8,7 @@ public class PlayerControler : MonoBehaviour {
     public static volatile Transform MyPosition;
     public static int life = 3;
 
+
     [Header("Level Manager")]
     public LevelManager levelManager;
 
@@ -16,7 +17,7 @@ public class PlayerControler : MonoBehaviour {
     {
         MyPosition = this.transform;
         TurnOffMouse();
-        life = 3;
+        life = 3;   
     }
 
     private void Start()
@@ -51,14 +52,13 @@ public class PlayerControler : MonoBehaviour {
     public static void TurnOnMouse()
     {
         Cursor.lockState = CursorLockMode.None;
-        Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
     }
 
     /// <summary>
     /// Turn Off visible of mouse
     /// </summary>
-   public static void TurnOffMouse()
+    public static void TurnOffMouse()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

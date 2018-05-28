@@ -20,7 +20,6 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 0ea7e3a1b65cd933d7a007e6774c4eaa Assembly-CSharp.dll:UnityStandardAssets.Characters.ThirdPerson.AICharacterControl
 7481472d4e57e8477d484d43a43b79dc Assembly-CSharp.dll:UnityStandardAssets.Characters.FirstPerson.FirstPersonController
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EventSystemChecker
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TargetScript
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -100,7 +99,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 6af7378a45ad6da4992a71ef50ddc2eb UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 9ca6347af5ceb6b0d1c105af31b6722e UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-949dd5025bb1f34980b92f219b97a82a Assembly-CSharp.dll:.EnemyBull
+943b4066dda3544eb4bd7165f620b85b Assembly-CSharp.dll:.EnemyBull
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -118,7 +117,6 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 712400c2759c5c631db03139dddc6146 Assembly-CSharp.dll:.PlayerStats
 78a2a366a0a3b585e1178d2dd9d006ab Assembly-CSharp.dll:UnityStandardAssets.Utility.WaypointProgressTracker
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.gun
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
 6e714b24188cddfc9ae1e07d05ed4ddd Assembly-CSharp.dll:UnityStandardAssets.Utility.ParticleSystemDestroyer
@@ -131,6 +129,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.Utility.DragRigidbody
 78ebae5ed9b3edeb216da437b99754a4 Assembly-CSharp.dll:UnityStandardAssets.CrossPlatformInput.Joystick
 e5cb7d9d845f49a734a51b38a845c0f2 Assembly-CSharp.dll:.GunScript
+a615784f31914250c5ce3733594e2181 Assembly-CSharp.dll:.SoundManager
 149e538468c9a609cf26b23682c996c7 Assembly-CSharp.dll:UnityStandardAssets.Utility.PlatformSpecificContent
 37bf4d6a6d424731cb4a9b998783e5c6 Assembly-CSharp.dll:UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter
 4df86f437a61b08c14fd0adff88ddf71 Assembly-CSharp.dll:UnityStandardAssets.Utility.ActivateTrigger
@@ -148,7 +147,7 @@ a90e94673f50d2237c1b971c138660c6 Assembly-CSharp.dll:UnityStandardAssets.Utility
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:UnityStandardAssets.Utility.ObjectResetter
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PlayerPrefsManager
 33f0629f6619e187e3371a6527343543 Assembly-CSharp.dll:.EnemySpawner
-154a3f081ffc393fee75973273574564 Assembly-CSharp.dll:.TankScript
+70f99db43e54be58bafcedae238560ce Assembly-CSharp.dll:.TankScript
 6e1517e3da6d7f220f5113a8628436b2 Assembly-CSharp.dll:.LoseUIManager
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -184,7 +183,6 @@ f91572617fc141461ba31895cb4ab540 Assembly-CSharp.dll:.PauseMenu
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 db3b233e35a88802fed1717d19c3d9ec Assembly-CSharp.dll:UnityStandardAssets.Utility.FollowTarget
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.LevelManager
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.PlayerManager
 a8796ecdc9d5c260bbe32f30c4b10708 Assembly-CSharp.dll:UnityStandardAssets.CrossPlatformInput.TouchPad
 b7f557c19cce3b6f593e26edfe1ec859 Assembly-CSharp.dll:UnityStandardAssets.Vehicles.Ball.Ball
 0ad469aca31264c6140b1e503c43ab6b Assembly-CSharp.dll:UnityStandardAssets.Utility.TimedObjectDestructor

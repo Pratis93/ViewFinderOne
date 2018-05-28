@@ -22,7 +22,7 @@ public class LoseUIManager : MonoBehaviour {
     void CheckAndSetStats()
     {
         float hitFloat = PlayerStats.hitPerRound;
-        float shotFloat = PlayerStats.shotPerRound;
+        float shotFloat = PlayerStats.shootPerRound;
 
         shotText.text = shotFloat.ToString();
         hitText.text = hitFloat.ToString();

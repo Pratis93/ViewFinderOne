@@ -462,7 +462,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 252276987}
-  - component: {fileID: 252276988}
   m_Layer: 0
   m_Name: Target
   m_TagString: MyTarget
@@ -483,17 +482,6 @@ Transform:
   m_Father: {fileID: 1070930794}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &252276988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 252276986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f19ed1e1edc5602448844f754ea7be6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &262400707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,7 +1320,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1457138022}
-        m_MethodName: Toggle
+        m_MethodName: TooglePause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2238,7 +2226,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_RunSpeed
-      value: 20
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_IsWalking
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
@@ -2613,6 +2609,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3705697, y: 3.16789, z: 1.0283123}
   m_Center: {x: 0.015037596, y: 1.083945, z: 0.014156103}
+--- !u!114 &1494865919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1494865911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a484b5d9936154a9ad5de98a65bb8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shoot: {fileID: 8300000, guid: ee0c27b32ef7f624487022b88e42ca3c, type: 3}
+  hit: {fileID: 8300000, guid: 712fe7502061d0446a0a19707ac12b00, type: 3}
 --- !u!1 &1502474887
 GameObject:
   m_ObjectHideFlags: 0
@@ -3311,7 +3320,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1863039361}
   - component: {fileID: 1863039362}
-  - component: {fileID: 1863039363}
   - component: {fileID: 1863039365}
   m_Layer: 0
   m_Name: Gun
@@ -3377,23 +3385,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!95 &1863039363
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1863039360}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 58bc7cc9b41fac2489bf75a7f9a1024d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1863039365
 MonoBehaviour:
   m_ObjectHideFlags: 0
