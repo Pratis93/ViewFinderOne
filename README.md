@@ -1,4 +1,3 @@
+# ViewFinder
 # LaserSpacer
-# ViewFinder
-# ViewFinder
 # ViewFinder
