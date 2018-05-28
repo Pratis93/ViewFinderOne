@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiewFinder3", "FiewFinder3.csproj", "{273046F0-33F9-870B-8BE2-6556CECF7674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiewFinder3.Editor", "FiewFinder3.Editor.csproj", "{AD8BBE94-9B83-D2A3-4E29-08DE2EA4D6A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{273046F0-33F9-870B-8BE2-6556CECF7674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273046F0-33F9-870B-8BE2-6556CECF7674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273046F0-33F9-870B-8BE2-6556CECF7674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273046F0-33F9-870B-8BE2-6556CECF7674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8BBE94-9B83-D2A3-4E29-08DE2EA4D6A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8BBE94-9B83-D2A3-4E29-08DE2EA4D6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8BBE94-9B83-D2A3-4E29-08DE2EA4D6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8BBE94-9B83-D2A3-4E29-08DE2EA4D6A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
